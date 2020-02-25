@@ -12,7 +12,6 @@
     <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -26,8 +25,6 @@
             <div class="panel-body">
                 <form:form action="saveCar" cssClass="form-horizontal"
                            method="post" modelAttribute="car">
-
-                    <!-- need to associate this data with customer id -->
                     <form:hidden path="id"/>
 
                     <div class="form-group">
@@ -36,6 +33,7 @@
                             <form:input path="name" cssClass="form-control"/>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label for="series" class="col-md-3 control-label">Series</label>
                         <div class="col-md-9">
@@ -51,12 +49,10 @@
                     </div>
 
                     <div class="form-group">
-                        <!-- Button -->
                         <div class="col-md-offset-3 col-md-9">
                             <form:button cssClass="btn btn-primary">Submit</form:button>
                         </div>
                     </div>
-
                 </form:form>
             </div>
         </div>

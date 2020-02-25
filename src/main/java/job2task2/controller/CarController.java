@@ -16,7 +16,7 @@ public class CarController {
     private CarService carService;
 
     @GetMapping("/list")
-    public String listCars(@RequestParam(name="locale", required=false, defaultValue="ru") String locale ,Model theModel) {
+    public String listCars(@RequestParam(name = "locale", required = false, defaultValue = "ru") String locale, Model theModel) {
         List<Car> theCars = carService.getCars();
         theModel.addAttribute("cars", theCars);
         theModel.addAttribute("locale", locale);

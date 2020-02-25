@@ -16,13 +16,13 @@ import java.util.List;
 public class CarDaoImpl implements CarDao {
     @Autowired
     private SessionFactory sessionFactory;
-    
+
     @Override
     public List<Car> getCars() {
         Session session = sessionFactory.getCurrentSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery< Car > cq = cb.createQuery(Car.class);
-        Root< Car > root = cq.from(Car.class);
+        CriteriaQuery<Car> cq = cb.createQuery(Car.class);
+        Root<Car> root = cq.from(Car.class);
         cq.select(root);
         Query query = session.createQuery(cq);
         return query.getResultList();
