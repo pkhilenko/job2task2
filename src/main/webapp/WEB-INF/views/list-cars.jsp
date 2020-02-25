@@ -16,11 +16,11 @@
 
 <body>
 <div class="container">
-    <div class="col-md-offset-1 col-md-10">
+    <div class="col-md-offset-1 col-md-10 mt-5">
         <input type="button" value="Add Car" onclick="window.location.href='showForm'; return false;"
                class="btn btn-primary" />
         <hr />
-        <br/><br/>
+        <br/>
         <div class="panel panel-info">
             <div class="panel-heading">
                 <div class="panel-title">
